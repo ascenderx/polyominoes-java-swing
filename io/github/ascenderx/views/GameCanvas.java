@@ -1,12 +1,13 @@
-package io.github.ascenderx;
+package io.github.ascenderx.views;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.util.LinkedList;
 import java.util.List;
 
 import javax.swing.JPanel;
+
+import io.github.ascenderx.models.Drawable;
 
 public class GameCanvas extends JPanel {
   public List<Drawable> drawables;

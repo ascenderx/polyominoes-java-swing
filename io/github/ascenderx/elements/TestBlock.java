@@ -1,4 +1,4 @@
-package io.github.ascenderx;
+package io.github.ascenderx.elements;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -7,6 +7,8 @@ import java.awt.Graphics2D;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Stroke;
+
+import io.github.ascenderx.models.Drawable;
 
 public class TestBlock implements Drawable {
   private Point position;

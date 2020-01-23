@@ -5,6 +5,12 @@ import java.awt.Point;
 import java.util.LinkedList;
 import java.util.List;
 
+import io.github.ascenderx.elements.TestBlock;
+import io.github.ascenderx.models.Drawable;
+import io.github.ascenderx.models.FramerateTimer;
+import io.github.ascenderx.views.GameCanvas;
+import io.github.ascenderx.views.GameWindow;
+
 public class Polyominoes {
   private GameWindow window;
   private GameCanvas canvas;

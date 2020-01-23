@@ -1,4 +1,4 @@
-package io.github.ascenderx;
+package io.github.ascenderx.views;
 
 import javax.swing.JFrame;
 

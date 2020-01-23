@@ -1,4 +1,4 @@
-package io.github.ascenderx;
+package io.github.ascenderx.models;
 
 public class FramerateTimer {
   private Thread thread;

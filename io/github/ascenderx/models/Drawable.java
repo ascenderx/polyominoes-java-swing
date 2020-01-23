@@ -1,4 +1,4 @@
-package io.github.ascenderx;
+package io.github.ascenderx.models;
 
 import java.awt.Graphics2D;
 
