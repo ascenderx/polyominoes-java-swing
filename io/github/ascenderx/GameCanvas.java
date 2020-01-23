@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
-import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
 public class GameCanvas extends JPanel {
@@ -12,7 +11,6 @@ public class GameCanvas extends JPanel {
   private int y;
 
   public GameCanvas() {
-    setBorder(BorderFactory.createLineBorder(Color.BLACK));
     x = 0;
     y = 0;
   }
