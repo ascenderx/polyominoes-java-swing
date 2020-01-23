@@ -2,11 +2,11 @@ package io.github.ascenderx;
 
 public class FramerateTimer {
   private Thread thread;
-  private TickHandler handler;
+  private Tickable handler;
   private long previous;
   private long interval;
 
-  public FramerateTimer(TickHandler handler, long interval) {
+  public FramerateTimer(Tickable handler, long interval) {
     previous = 0L;
     this.interval = interval;
     this.handler = handler;

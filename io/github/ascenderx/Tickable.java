@@ -1,5 +1,5 @@
 package io.github.ascenderx;
 
-public interface TickHandler {
+public interface Tickable {
   public void tick();
 }

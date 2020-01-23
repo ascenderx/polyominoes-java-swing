@@ -1,18 +1,28 @@
 package io.github.ascenderx;
 
 import java.awt.EventQueue;
+import java.awt.Point;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Tiles {
   private GameWindow window;
   private GameCanvas canvas;
   private FramerateTimer timer;
-  private static final long INTERVAL = 10;
+  private List<Drawable> drawables;
+  private static final long INTERVAL = 50;
 
   public Tiles() {
-    canvas = new GameCanvas();
+    drawables = new LinkedList<Drawable>();
+    drawables.add(new TestBlock(new Point(0, 0)));
+
+    canvas = new GameCanvas(drawables);
     window = new GameWindow(canvas);
 
     timer = new FramerateTimer(() -> {
+      for (Drawable drawable : drawables) {
+        drawable.update();
+      }
       canvas.repaint();
     }, INTERVAL);
   }
