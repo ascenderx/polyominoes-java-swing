@@ -7,6 +7,7 @@ public class GameWindow extends JFrame {
   private static final int WIDTH = 128 * SCALE;
   private static final int HEIGHT = 64 * SCALE;
   private static final String TITLE = "Tiles";
+  private static final long serialVersionUID = 1L;
 
   public GameWindow(GameCanvas canvas) {
     super(TITLE);

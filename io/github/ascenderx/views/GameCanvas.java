@@ -11,6 +11,7 @@ import io.github.ascenderx.models.Drawable;
 
 public class GameCanvas extends JPanel {
   public List<Drawable> drawables;
+  private static final long serialVersionUID = 1L;
   
   public GameCanvas(List<Drawable> drawables) {
     this.drawables = drawables;
