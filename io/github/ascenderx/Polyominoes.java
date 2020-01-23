@@ -5,14 +5,14 @@ import java.awt.Point;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Tiles {
+public class Polyominoes {
   private GameWindow window;
   private GameCanvas canvas;
   private FramerateTimer timer;
   private List<Drawable> drawables;
   private static final long INTERVAL = 50;
 
-  public Tiles() {
+  public Polyominoes() {
     drawables = new LinkedList<Drawable>();
     drawables.add(new TestBlock(new Point(0, 0)));
 
@@ -35,7 +35,7 @@ public class Tiles {
   }
 
   public static void main(String[] args) {
-    Tiles tiles = new Tiles();
+    Polyominoes tiles = new Polyominoes();
     tiles.run();
   }
 }
