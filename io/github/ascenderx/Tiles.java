@@ -5,7 +5,9 @@ import javax.swing.JFrame;
 public class Tiles {
   private JFrame frame;
   private GameCanvas canvas;
-  private long previous;
+  private FramerateTimer timer;
+
+  private static long INTERVAL = 10;
 
   public Tiles(String title, int width, int height) {
     frame = new JFrame(title);
@@ -16,21 +18,14 @@ public class Tiles {
     canvas = new GameCanvas();
     frame.add(canvas);
 
-    previous = 0L;
+    timer = new FramerateTimer(() -> {
+      canvas.repaint();
+    }, INTERVAL);
   }
 
   public void run() {
     frame.setVisible(true);
-    new Thread(() -> {
-      while (true) {
-        long timestamp = System.currentTimeMillis();
-        long elapsed = timestamp - previous;
-        if (elapsed >= 10) {
-          previous = timestamp;
-          canvas.repaint();
-        }
-      }
-    }).start();
+    timer.start();
   }
 
   public static void main(String[] args) {
