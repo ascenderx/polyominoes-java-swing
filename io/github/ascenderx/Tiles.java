@@ -1,22 +1,16 @@
 package io.github.ascenderx;
 
-import javax.swing.JFrame;
+import java.awt.EventQueue;
 
 public class Tiles {
-  private JFrame frame;
+  private GameWindow window;
   private GameCanvas canvas;
   private FramerateTimer timer;
+  private static final long INTERVAL = 10;
 
-  private static long INTERVAL = 10;
-
-  public Tiles(String title, int width, int height) {
-    frame = new JFrame(title);
-    frame.setSize(width, height);
-    frame.setResizable(false);
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+  public Tiles() {
     canvas = new GameCanvas();
-    frame.add(canvas);
+    window = new GameWindow(canvas);
 
     timer = new FramerateTimer(() -> {
       canvas.repaint();
@@ -24,15 +18,14 @@ public class Tiles {
   }
 
   public void run() {
-    frame.setVisible(true);
-    timer.start();
+    EventQueue.invokeLater(() -> {
+      window.reveal();
+      timer.start();
+    });
   }
 
   public static void main(String[] args) {
-    int scale = 4;
-    int width = 128 * scale;
-    int height = 64 * scale;
-    Tiles tiles = new Tiles("Tiles", width, height);
+    Tiles tiles = new Tiles();
     tiles.run();
   }
 }
