@@ -1,29 +1,30 @@
 package io.github.ascenderx;
 
 import java.awt.EventQueue;
-import java.awt.Point;
-import java.util.LinkedList;
 import java.util.List;
 
-import io.github.ascenderx.elements.TestBlock;
 import io.github.ascenderx.models.Drawable;
 import io.github.ascenderx.models.FramerateTimer;
+import io.github.ascenderx.models.Game;
+import io.github.ascenderx.models.InputHandler;
 import io.github.ascenderx.views.GameCanvas;
 import io.github.ascenderx.views.GameWindow;
 
 public class Polyominoes {
+  private Game game;
   private GameWindow window;
   private GameCanvas canvas;
+  private InputHandler inputHandler;
   private FramerateTimer timer;
   private List<Drawable> drawables;
   private static final long INTERVAL = 50;
 
   public Polyominoes() {
-    drawables = new LinkedList<Drawable>();
-    drawables.add(new TestBlock(new Point(0, 0)));
-
+    inputHandler = new InputHandler();
+    game = new Game(inputHandler);
+    drawables = game.getDrawables();
     canvas = new GameCanvas(drawables);
-    window = new GameWindow(canvas);
+    window = new GameWindow(canvas, inputHandler);
 
     timer = new FramerateTimer(() -> {
       for (Drawable drawable : drawables) {

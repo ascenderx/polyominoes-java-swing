@@ -31,7 +31,10 @@ public class TestBlock implements Drawable {
 
   @Override
   public void update() {
-    position.translate(5, 5);
     rectangle.setLocation(position);
+  }
+
+  public Point getPosition() {
+    return this.position;
   }
 }
