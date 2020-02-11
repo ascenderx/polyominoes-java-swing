@@ -1,10 +1,10 @@
-package io.github.ascenderx.views;
+package io.github.ascenderx.Polyominoes.views;
 
 import java.awt.event.KeyEvent;
 
 import javax.swing.JFrame;
 
-import io.github.ascenderx.models.InputHandler;
+import io.github.ascenderx.Polyominoes.models.InputHandler;
 
 public class GameWindow extends JFrame {
   private InputHandler inputHandler;

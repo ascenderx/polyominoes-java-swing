@@ -1,4 +1,4 @@
-package io.github.ascenderx.models;
+package io.github.ascenderx.Polyominoes.models;
 
 import java.awt.Graphics2D;
 

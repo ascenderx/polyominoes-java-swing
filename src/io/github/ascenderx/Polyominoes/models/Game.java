@@ -1,4 +1,4 @@
-package io.github.ascenderx.models;
+package io.github.ascenderx.Polyominoes.models;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import java.awt.Point;
 import java.awt.event.KeyEvent;
 
-import io.github.ascenderx.elements.TestBlock;
-import io.github.ascenderx.models.Drawable;
+import io.github.ascenderx.Polyominoes.elements.TestBlock;
+import io.github.ascenderx.Polyominoes.models.Drawable;
 
 public class Game {
   private List<Drawable> drawables;

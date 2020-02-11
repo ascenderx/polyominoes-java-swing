@@ -1,4 +1,4 @@
-package io.github.ascenderx.views;
+package io.github.ascenderx.Polyominoes.views;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -7,7 +7,7 @@ import java.util.List;
 
 import javax.swing.JPanel;
 
-import io.github.ascenderx.models.Drawable;
+import io.github.ascenderx.Polyominoes.models.Drawable;
 
 public class GameCanvas extends JPanel {
   public List<Drawable> drawables;

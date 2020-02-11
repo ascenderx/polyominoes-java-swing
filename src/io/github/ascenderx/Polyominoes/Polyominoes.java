@@ -1,14 +1,14 @@
-package io.github.ascenderx;
+package io.github.ascenderx.Polyominoes;
 
 import java.awt.EventQueue;
 import java.util.List;
 
-import io.github.ascenderx.models.Drawable;
-import io.github.ascenderx.models.FramerateTimer;
-import io.github.ascenderx.models.Game;
-import io.github.ascenderx.models.InputHandler;
-import io.github.ascenderx.views.GameCanvas;
-import io.github.ascenderx.views.GameWindow;
+import io.github.ascenderx.Polyominoes.models.Drawable;
+import io.github.ascenderx.Polyominoes.models.FramerateTimer;
+import io.github.ascenderx.Polyominoes.models.Game;
+import io.github.ascenderx.Polyominoes.models.InputHandler;
+import io.github.ascenderx.Polyominoes.views.GameCanvas;
+import io.github.ascenderx.Polyominoes.views.GameWindow;
 
 public class Polyominoes {
   private Game game;
