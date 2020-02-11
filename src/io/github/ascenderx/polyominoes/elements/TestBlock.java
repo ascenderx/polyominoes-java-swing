@@ -1,4 +1,4 @@
-package io.github.ascenderx.Polyominoes.elements;
+package io.github.ascenderx.polyominoes.elements;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -8,7 +8,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Stroke;
 
-import io.github.ascenderx.Polyominoes.models.Drawable;
+import io.github.ascenderx.polyominoes.models.Drawable;
 
 public class TestBlock implements Drawable {
   private Point position;

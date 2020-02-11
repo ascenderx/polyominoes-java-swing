@@ -1,4 +1,4 @@
-package io.github.ascenderx.Polyominoes.models;
+package io.github.ascenderx.polyominoes.models;
 
 public class KeyboardKey {
   public static final byte RELEASED = 0;
